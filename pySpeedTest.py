@@ -1,7 +1,5 @@
 import speedtest
 
-
-
 class PySpeedTest:
     def __init__(self) -> None:
         self.test = speedtest.Speedtest()
@@ -34,8 +32,6 @@ class PySpeedTest:
         ping_ = self.ping()
         print(f"Ping: {ping_:.1f} ms")
 
-   
-
-
+       
 test = PySpeedTest()
 test.display()
