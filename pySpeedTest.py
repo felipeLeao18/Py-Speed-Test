@@ -1,5 +1,5 @@
 import speedtest
-import time
+
 
 
 class PySpeedTest:
@@ -7,7 +7,7 @@ class PySpeedTest:
         self.test = speedtest.Speedtest()
         self.better_server = self.test.get_best_server()
         self.location = self.better_server['country']
-        self.start = time.time()
+      
 
     def download_speed(self):
         self.download_speed = self.test.download()/1024/1024
@@ -34,8 +34,7 @@ class PySpeedTest:
         ping_ = self.ping()
         print(f"Ping: {ping_:.1f} ms")
 
-        self.end = time.time()
-        self.run_time = self.end - self.start
+   
 
 
 test = PySpeedTest()
