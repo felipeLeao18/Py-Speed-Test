@@ -6,7 +6,6 @@ class PySpeedTest:
         self.better_server = self.test.get_best_server()
         self.location = self.better_server['country']
       
-
     def download_speed(self):
         self.download_speed = self.test.download()/1024/1024
         return self.download_speed
