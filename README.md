@@ -6,5 +6,5 @@
 # How to run 
   - pip install speedtest-cli
   - Clone the project
-  - Open the containing folder on a terminal
+  - Open the containing folder in a terminal
   - enter the command: "python3 pySpeedTest.py"
